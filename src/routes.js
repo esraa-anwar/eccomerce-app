@@ -1,23 +1,20 @@
 import React from 'react'
-import ProductList from './Componetns/ProductList'
+import ProductList from './Components/ProductList'
 import {
     Route,
-    Navigate,
-    Routes,
-    useLocation,
-    useNavigate,
-    useParams,
-    Router
-} from "react-router-dom";
-import ContactPage from './Componetns/ContactPage';
-import Cart from './Componetns/Cart';
 
-import Home from './Componetns/Home';
+    Routes,
+
+} from "react-router-dom";
+import ContactPage from './Components/ContactPage';
+import Cart from './Components/Cart';
+
+import Home from './Components/Home';
 const AppRoutes = () => {
     return (
 
         <Routes>
-            {/* <Route path="/" element={redirectToHome()} /> */}
+
             <Route
                 path="/"
                 element={

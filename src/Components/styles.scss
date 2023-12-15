@@ -1,6 +1,35 @@
 body {
   background-color: #ffffff;
 }
+.home-page {
+  p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+.nav {
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #0000001a;
+  border-radius: 10px;
+  opacity: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 2rem;
+  .links {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    li {
+      justify-self: center;
+      color: #474746;
+      a {
+        color: #474746;
+      }
+    }
+  }
+}
 .form-data {
   display: grid;
   grid-template-columns: 1fr;
@@ -11,8 +40,14 @@ body {
     display: grid;
     gap: 2rem;
     grid-template-columns: 1fr;
+    label {
+      font-size: 16px;
+      color: #474746;
+      font-weight: 700;
+    }
     input,
     textarea {
+      padding-left: 15px;
       height: 40px;
       background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
       border: 1px solid var(--unnamed-color-e9d023);
